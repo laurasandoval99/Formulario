@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAB3CD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CAB3CD"
+        android:backgroundTint="#CAB3CD"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/form"
+            android:textAlignment="center"
+            android:textColor="#2B2732"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#9F93A1"
+            android:orientation="vertical"
+            app:boxBackgroundColor="#E1DEE4"
+            app:errorTextColor="#BA2F2F"
+            app:helperText="@string/requiered_field"
+            app:helperTextTextColor="#473E57"
+            app:hintTextColor="#402345">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#2B2732"
+                android:backgroundTint="#9F93A1"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:orientation="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passswod_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#E1DEE4"
+            app:endIconMode="password_toggle"
+            app:errorTextColor="#A13737"
+            app:helperText="@string/requiered_field"
+            app:helperTextTextColor="#473E57">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2B2732"
+                android:backgroundTint="#9F93A1"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="#2B2732"
+                android:textColorHighlight="#2B2732" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rep_password_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#E1DEE4"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperText="@string/rep_password"
+            app:helperTextTextColor="#473E57">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rep_password_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2B2732"
+                android:backgroundTint="#9F93A1"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/rep_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/gender_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/gender"
+            android:textColor="#2B2732"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/female_radio_button"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#CAB3CD"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/female"
+                android:textColor="#2B2732" />
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/male"
+                android:textColor="#2B2732" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/hobbies_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/hobbies"
+            android:textColor="#2B2732"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/sport_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/sports"
+                android:textColor="#2B2732" />
+
+            <CheckBox
+                android:id="@+id/read_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/read"
+                android:textColor="#2B2732" />
+
+            <CheckBox
+                android:id="@+id/eat_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/eat"
+                android:textColor="#2B2732" />
+
+            <CheckBox
+                android:id="@+id/dance_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/dance"
+                android:textColor="#2B2732" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fecha_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/born"
+            android:textAlignment="viewStart"
+            android:textColor="#2B2732"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/fecha_nacimiento_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#9F93A1"
+            android:text="@string/input_date"
+            android:textColor="#2B2732" />
+
+        <TextView
+            android:id="@+id/born_city_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/born_city"
+            android:textColor="#2B2732"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/born_city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="#9F93A1"
+            android:backgroundTint="#9F93A1"
+            android:entries="@array/city_list"
+            android:foregroundTint="#9F93A1"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#402345"
+            android:gravity="center"
+            android:shadowColor="#3C2B5A"
+            android:text="@string/saveButton"
+            android:textColor="#ECE8E8"
+            app:rippleColor="#31204E"
+            app:strokeColor="#7C278A" />
+
+        <TextView
+            android:id="@+id/info_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/info"
+            android:textColor="#2B2732"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

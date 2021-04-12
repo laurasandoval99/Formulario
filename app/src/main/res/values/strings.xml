@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="form">Formulario</string>
+    <string name="email">Correo electrónico</string>
+    <string name="requiered_field">Campo requerido</string>
+    <string name="password">Contraseña</string>
+    <string name="rep_password">Repetir la contraseña</string>
+    <string name="saveButton">GUARDAR</string>
+    <string name="info">Información del usuario</string>
+    <string name="gender">Género</string>
+    <string name="female">Femenino</string>
+    <string name="male">Masculino</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="sports">Deportes</string>
+    <string name="read">Leer</string>
+    <string name="eat">Comer</string>
+    <string name="dance">Bailar</string>
+    <string name="password_error">Las contraseñas no son iguales</string>
+    <string name="email_error">Debe ingresar un correo electrónico</string>
+    <string name="password_warning">Ingresar contraseña</string>
+    <string name="date">""</string>
+    <string name="date_field">Seleccione la fecha</string>
+    <string name="fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="input_date">Ingrese la fecha</string>
+    <string name="born_city">Ciudad de origen</string>
+    <string name="required_parameter_text">Ingresar parámetros requeridos</string>
+    <string name="initial_parameter">Ingrese ciudad</string>
+    <string name="born">Fecha de nacimiento:</string>
+</resources>

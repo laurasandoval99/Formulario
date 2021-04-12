@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city_list">
+        <item>Ingrese ciudad</item>
+        <item>Bogotá</item>
+        <item>Medellin</item>
+        <item>Popayán</item>
+        <item>Cartagena</item>
+        <item>Cali</item>
+
+    </string-array>
+
+</resources>
